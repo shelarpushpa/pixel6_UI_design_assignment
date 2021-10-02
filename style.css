@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+body{
+ background:  #E0B941;
+ /*background: #fec107;*/
+ padding: 3 3px;
+ 
+}
+.wrapper{
+ max-width: 600px;
+ width: 100%;
+ background: #fff;
+ margin: 20px auto;
+ padding: 30px;
+ box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+ 
+}
+.wrapper .title{
+
+ font-size: 24px;
+ font-weight: 700;
+ margin-bottom: 25px;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+.wrapper .from .input_field{
+
+margin-bottom: 15px;
+display: flex;
+align-items: center;
+     
+}
+.wrapper .from .input_field label{
+  width: 150px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.wrapper .from .input_field.input{
+
+ width: 100%;
+ outline: none;
+ border: 1px solid #d5dbd9;
+ font-size: 15px;
+ padding: 8px 10px;
+ border-radius: 3px;
+ 
+}
+
+.wrapper .from .input_field.btn{
+  width:100%;
+  outline: none;
+  padding: 8px 30px;
+  font-size: 15px;
+  border: 1px;
+  color: red;
+  border-radius: 3px;
+  background: green;
+  cursor: pointer;
+}
+
+.wrapper .from .input_field.btn:hover{
+  background: #ffd658;
+}
+
+@media (max-width: 420px){
+           .wrapper .from .input_field{
+
+               flex-direction: column;
+               align-items: center;
+         
+          }
+        .wrapper .from .input_field label{
+           margin-bottom: 5px;
+        
+       }
+
+  
+}
+
+
+
