@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>registration from</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!--<h2>HTML Forms</h2>-->
+
+<!-- </script> -->
+<div class="wrapper">
+    <div class="title">
+         Pixel6 Web Studio Pvt. Ltd
+    </div><br><br>
+     
+      <div class="from">
+         <div class="input_field">
+           <label>FullName:</label>
+            <input type="text" id="fname" name="fname" onkeypress="javascript:return isalpha(event)"  onblur=" fnameValidation()" class="input"><br>
+             <span id="error1"></span><br><br>
+         </div>
+         
+        <div class="input_field">
+          <label>Email id:</label>
+           <input type="text" id="email" name="email"  onblur="emailValidation()"  class="input"><br>
+		<span id="error2"></span><br><br>
+            
+         </div>
+
+         <div class="input_field">
+           <label>Phone No:</label>
+            <input type="text" id="phno" name="phno" maxlength="19" onkeypress="javascript:return isNumber(event)"  onblur="myFunction1() "  class="input"><span id="demo1" ></span>&nbsp;<span id="demo2" ></span><br>
+                 <span id="error3"></span><br><br>
+             
+           </div>
+
+           <div class="input_field">
+              <input type="submit" name="submit" value="Submit" onclick="validate();" class="btn" />
+             
+            </div>
+<!--<form name="myform" id="myform">
+
+	<div id="fields">
+		<label>FullName:</label><br>
+		<input type="text" id="fname" name="fname" onkeypress="javascript:return isalpha(event)"  onblur=" fnameValidation()" ><br>
+		<span id="error1"></span><br><br>
+		<label>Email id:</label><br>
+		<input type="text" id="email" name="email"  onblur="emailValidation()" ><br>
+		<span id="error2"></span><br><br>
+		<label>Phone No:</label><br>
+		<div>
+		<input type="text" id="phno" name="phno" maxlength="19" onkeypress="javascript:return isNumber(event)"  onblur="myFunction1() "><span id="demo1" ></span>&nbsp;<span id="demo2" ></span>
+                 <span id="error3"></span><br><br>
+		</div><br>
+                 <p id="d"></p>
+		<!--<span id="error3"></span><br><br>
+                 <button style="color:white" style="background-color:red" type="button"  value="Submit" onclick="validate();">submit</button>
+		
+		<!--<input type="button" name="submit" value="Submit" onclick="validate();" /> 
+	</div>
+  
+</form>-->
+</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
